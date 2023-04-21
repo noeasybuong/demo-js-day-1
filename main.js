@@ -5,13 +5,18 @@ function myFunction(Celsius) {
 }
 myFunction(6);
 
-function myString (myString1){
-    for(var i= 0; i<10; i++){
-myString1 += `${}`
+function myString(myString1) {
+    var myUp = "";
+    for (var i = 0; i < 10; i++) {
+        myUp += myString1 + "-"
     }
-
+    console.log(myUp.slice(0, length - 1));
 }
+
 myString("123")
+
+
+
 
 function myNumber(number1, number2) {
     if (number1 > number2) {
