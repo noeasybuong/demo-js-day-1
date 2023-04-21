@@ -19,15 +19,23 @@ myString("123")
 
 
 function myNumber(number1, number2) {
-    if (number1 > number2) {
-        console.log(number1 + " lớn hơn " + number2);
+    if (typeof number1 == "number" && typeof number2 == "number") {
+        if (number1 > number2 || number2 > number1) {
 
+            myNumber(number1 < number2) ? console.log(number2 + " lớn hơn " + number1) : console.log(number2 + " lớn hơn " + number1);
+
+
+        }
+
+        else {
+            console.log(number1 + " = " + number2);
+        }
     }
-    if (number2 > number1) {
-        console.log(number2 + " lớn hơn " + number1);
+    else {
+        console.log("Bạn nhập không đúng định dạng");
     }
 }
-myNumber(5, 7);
+myNumber(3, 7);
 
 
 
