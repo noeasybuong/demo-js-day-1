@@ -1,6 +1,6 @@
 
 function myFunction(Celsius) {
-    var fahRenhei = Celsius * 95 + 32;
+    var fahRenhei = Celsius * 1.8 + 32;
     console.log(Celsius + " C " + " = ", fahRenhei + " F");
 }
 myFunction(6);
